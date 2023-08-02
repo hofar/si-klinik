@@ -1,0 +1,35 @@
+table.bordered,
+.bordered th,
+.bordered td {
+    border: 1px solid;
+}
+
+table,
+th,
+td {
+    padding: 4px;
+}
+
+table.bordered {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-4 {
+    margin-bottom: 16px;
+}
+
+.wk-r {
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 100%;
+    text-align: -webkit-right;
+}
+
+.anychart-credits {
+    display: none;
+}
