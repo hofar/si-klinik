@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 01, 2023 at 05:49 PM
+-- Generation Time: Aug 02, 2023 at 01:03 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.2.4
 
@@ -43,7 +43,11 @@ CREATE TABLE `berobat` (
 
 INSERT INTO `berobat` (`id_berobat`, `id_pasien`, `id_dokter`, `tgl_berobat`, `keluhan`, `diagnosa`, `penatalaksaan`) VALUES
 (1, 4, 4, '2020-10-17', 'Jatuh', 'Obat Merah', 'Rawat Inap'),
-(3, 1, 3, '2020-10-21', 'Meriang', 'Begadang', 'Rujuk');
+(3, 1, 3, '2020-10-21', 'Meriang', 'Begadang', 'Rujuk'),
+(4, 1, 3, '2023-08-02', 'test', 'test', 'Rawat Jalan'),
+(5, 2, 5, '2023-08-02', '', '', 'Rawat Jalan'),
+(6, 3, 1, '2023-08-02', '', '', 'Rawat Jalan'),
+(7, 4, 3, '2023-08-02', '', '', 'Rawat Jalan');
 
 -- --------------------------------------------------------
 
@@ -130,7 +134,8 @@ INSERT INTO `resep_obat` (`id_resep`, `id_berobat`, `id_obat`) VALUES
 (1, 3, 1),
 (2, 3, 2),
 (3, 3, 2),
-(4, 1, 2);
+(4, 1, 2),
+(6, 4, 2);
 
 -- --------------------------------------------------------
 
@@ -204,7 +209,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `berobat`
 --
 ALTER TABLE `berobat`
-  MODIFY `id_berobat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_berobat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `dokter`
@@ -228,7 +233,7 @@ ALTER TABLE `pasien`
 -- AUTO_INCREMENT for table `resep_obat`
 --
 ALTER TABLE `resep_obat`
-  MODIFY `id_resep` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_resep` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `users`
